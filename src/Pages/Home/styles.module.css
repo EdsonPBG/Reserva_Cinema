@@ -1,0 +1,59 @@
+/* --- Estilos da Página Home.tsx --- */
+.homeContainer {
+  padding: 30px;
+  flex-grow: 1; /* Permite que o conteúdo cresça e ocupe o espaço disponível */
+}
+
+.homeContainer h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #444; /* Linha divisória discreta */
+  padding-bottom: 15px;
+}
+
+/* Grid de filmes na página inicial */
+.filmesGrid {
+  display: grid;
+  /* Layout responsivo: colunas se ajustam automaticamente, com largura mínima de 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px; /* Espaçamento maior entre os cards */
+  justify-content: center; /* Centraliza os cards no grid */
+  padding: 20px 0;
+}
+
+/* Contêiner da barra de pesquisa */
+.searchBarContainer {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Campo de input da pesquisa */
+.searchInput {
+  width: 80%; /* Ajuste a largura conforme necessário */
+  max-width: 500px; /* Limite máximo para a largura do input */
+  padding: 12px 20px;
+  border: 2px solid #e50914; /* Borda com cor de destaque */
+  border-radius: 8px;
+  background-color: #3a3a3a; /* Fundo escuro */
+  color: #f5f5f5; /* Texto claro */
+  font-size: 1.1em;
+  outline: none; /* Remove a borda de foco padrão */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.searchInput::placeholder {
+  color: #aaa; /* Cor do placeholder */
+  opacity: 0.8;
+}
+
+.searchInput:focus {
+  border-color: #ff4500; /* Laranja/vermelho mais vibrante no foco */
+  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.3); /* Sombra de foco */
+}
+
+/* Ajuste se o .filmesGrid precisar de mais espaçamento acima após adicionar a search bar */
+.homeContainer .filmesGrid {
+  margin-top: 20px; /* Garante que o grid não fique colado na search bar */
+}

@@ -1,0 +1,113 @@
+/* --- Estilos da Página FilmeDetalhes.tsx --- */
+.filmeDetalhesContainer {
+  padding: 40px;
+  background-color: #2c2c2c; /* Fundo escuro */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+  position: relative;
+}
+
+.filmeDetalhesContainer h2 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.backButton {
+  background-color: #4a4a4a; /* Cinza escuro */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  box-shadow: none;
+  text-transform: none; /* Não em maiúsculas */
+  font-weight: normal;
+}
+
+.backButton:hover {
+  background-color: #5a5a5a;
+  transform: none;
+}
+
+.filmeInfo {
+  display: flex;
+  flex-direction: row; /* Layout em linha para desktop */
+  align-items: flex-start; /* Alinha no topo */
+  gap: 40px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.filmePosterDetalhes {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filmeTextoDetalhes {
+  flex: 1;
+}
+
+.filmeTextoDetalhes p {
+  font-size: 1.15em;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.filmeTextoDetalhes p strong {
+  color: #f5f5f5; /* Texto forte mais claro */
+}
+
+.sessoesTitulo {
+  color: #e50914;
+  font-size: 2em;
+  margin-top: 50px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 15px;
+}
+
+.sessoesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.sessaoCard {
+  background-color: #333; /* Fundo ligeiramente mais claro */
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  min-width: 220px;
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.sessaoCard p {
+  margin: 8px 0;
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+.selecionarAssentosButton {
+  background-color: #e50914; /* Vermelho vibrante */
+  color: white;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.selecionarAssentosButton:hover:not(:disabled) {
+  background-color: #c00c11;
+}

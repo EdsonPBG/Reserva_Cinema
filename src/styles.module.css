@@ -1,0 +1,79 @@
+/* --- Estilos Globais --- */
+* {
+  box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura */
+}
+
+/* Estilos para o corpo da página */
+body {
+  font-family: 'Inter', sans-serif; /* Aplica a fonte 'Inter' */
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Fundo bem escuro, quase preto */
+  color: #f5f5f5; /* Texto claro */
+  line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+}
+
+/* Estilos para títulos de todos os níveis */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #e50914; /* Vermelho vibrante, similar ao destaque do Ingresso.com */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra leve no texto */
+}
+
+/* Estilos para links (geralmente usados pelo Link do React Router) */
+a {
+  text-decoration: none; /* Remove sublinhado padrão */
+  color: inherit; /* Links herdam a cor do texto do elemento pai */
+}
+
+/* Estilos gerais para todos os botões */
+button {
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  border: none; /* Remove a borda padrão */
+  border-radius: 8px; /* Cantos levemente arredondados */
+  padding: 12px 25px; /* Padding maior para facilitar o clique */
+  font-size: 1.05em;
+  font-weight: 600; /* Texto mais encorpado */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Animação suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+}
+
+/* Efeito ao passar o mouse sobre o botão (se não estiver desabilitado) */
+button:hover:not(:disabled) {
+  transform: translateY(-2px); /* Efeito de "levantar" */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra um pouco maior */
+}
+
+/* Estilos para botões desabilitados */
+button:disabled {
+  background-color: #333; /* Fundo escuro sutil para desabilitado */
+  color: #888;
+  cursor: not-allowed; /* Mudo o cursor para indicar que não é clicável */
+  opacity: 0.6; /* Opacidade reduzida */
+  box-shadow: none; /* Remove sombra */
+  transform: none; /* Remove efeito de hover */
+}
+
+/* --- Estilos do Componente App.tsx (Contêiner Principal) --- */
+.app {
+  text-align: center; /* Centraliza o texto */
+  padding: 20px;
+  max-width: 1200px; /* Largura máxima para o conteúdo central */
+  margin: 0 auto; /* Centraliza o contêiner na página */
+  background-color: #222; /* Fundo um pouco mais claro que o body */
+  border-radius: 12px; /* Cantos arredondados */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada */
+  min-height: 100vh; /* Garante que o app ocupe a altura total da tela */
+  display: flex; /* Usa flexbox para o layout vertical */
+  flex-direction: column; /* Coloca os itens em coluna */
+}
+
+/* Título principal do aplicativo */
+.app h1 {
+  font-size: 3em;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}

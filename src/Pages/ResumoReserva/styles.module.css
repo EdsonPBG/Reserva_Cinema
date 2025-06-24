@@ -1,0 +1,77 @@
+/* --- Estilos da Página ResumoReserva.tsx --- */
+.resumoReservaContainer {
+  padding: 40px;
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #2c2c2c;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.resumoReservaContainer h2 {
+  font-size: 2.8em;
+  margin-bottom: 35px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+}
+
+.resumoDetalhes {
+  background-color: #333; /* Fundo ligeiramente mais claro */
+  border: 1px solid #4a4a4a;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 50px;
+  text-align: left;
+  line-height: 2; /* Aumenta o espaçamento entre linhas */
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.resumoDetalhes p {
+  margin-bottom: 12px;
+  color: #f5f5f5;
+  font-size: 1.2em;
+}
+
+.resumoDetalhes p strong {
+  color: #e50914; /* Destaque em vermelho para os títulos */
+}
+
+.resumoTotal {
+  font-size: 2.2em;
+  font-weight: bold;
+  color: #e50914; /* Total em vermelho */
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px dashed #4a4a4a; /* Linha tracejada discreta */
+}
+
+/* Botões de Ação no Resumo */
+.confirmarReservaButton,
+.cancelarReservaButton {
+  padding: 15px 30px;
+  font-size: 1.1em;
+  margin: 0 15px;
+  width: auto;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirmarReservaButton {
+  background-color: #e50914; /* Vermelho principal */
+  color: white;
+}
+
+.confirmarReservaButton:hover {
+  background-color: #c00c11;
+}
+
+.cancelarReservaButton {
+  background-color: #4a4a4a; /* Cinza para cancelar */
+  color: white;
+}
+
+.cancelarReservaButton:hover {
+  background-color: #5a5a5a;
+}

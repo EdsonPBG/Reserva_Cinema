@@ -1,11 +1,11 @@
 // import { useState } from 'react'
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Pages/home";
+import Home from "./Pages/Home";
 import { ReservaProvider } from "./Context/ReservaContext";
-import FilmeDetalhes from "./Pages/filmeDetalhes"
-import SelecaoAssentos from "./Pages/selecaoAssentos";
-import ResumoReserva from "./Pages/resumoReserva";
+import FilmeDetalhes from "./Pages/FilmeDetalhes"
+import SelecaoAssentos from "./Pages/SelecaoAssentos";
+import ResumoReserva from "./Pages/ResumoReserva";
 import styles from "./styles.module.css";
 
 function App() {
