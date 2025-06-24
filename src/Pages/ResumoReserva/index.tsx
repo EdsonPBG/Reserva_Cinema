@@ -11,7 +11,7 @@ const ResumoReserva = () => {
     const { filmeSelecionado, sessaoSelecionada, assentoSelecionado } = reserva;
 
         if (!filmeSelecionado || !sessaoSelecionada || assentoSelecionado.length === 0) {
-            console.warn("Dados da reserva incomppletos. Redirecionando.");
+            console.warn("Dados da reserva incompletos. Redirecionando.");
             navigate("/");
             return null;
         }

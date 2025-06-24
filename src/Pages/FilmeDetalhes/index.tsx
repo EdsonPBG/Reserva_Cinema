@@ -66,7 +66,7 @@ const FilmeDetalhes = () => {
             </div>
         </div>
 
-        <h3 className={styles.sessoesTitulo}>Sessões Disponvei:</h3>
+        <h3 className={styles.sessoesTitulo}>Sessões Disponveis:</h3>
 
         <div className={styles.sessoesList}>
         {filmeExibido.sessao && filmeExibido.sessao.length > 0 ? (
