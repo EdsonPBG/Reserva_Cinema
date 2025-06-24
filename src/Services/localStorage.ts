@@ -12,7 +12,7 @@ const initialCineData: CinemaData = {
                     id: "Sessao1_Filme1",
                     horario: "18:00",
                     sala: "Sala 1",
-                    preco: "30 inteira / 15 meia",
+                    preco: 30,
                     assentosOcupado: ["A1","A2","B4","B1","A5"]
                 },
 
@@ -20,7 +20,7 @@ const initialCineData: CinemaData = {
                     id: "Sessao2_Filme1",
                     horario: "21:00",
                     sala: "Sala 2",
-                    preco: "30 inteira / 15 meia",
+                    preco: 30,
                     assentosOcupado: ["A1","B3","B4","B5","B6","A5"]
                 }
             ]
@@ -36,7 +36,7 @@ const initialCineData: CinemaData = {
                     id: "Sessao1_Filme2",
                     horario: "18:00",
                     sala: "Sala 3",
-                    preco: "50 intera / 25 meia",
+                    preco: 50,
                     assentosOcupado: ["C2","C3","A1"]
                 },
 
@@ -44,7 +44,31 @@ const initialCineData: CinemaData = {
                     id: "Sessao2_Filme2",
                     horario: "21:30",
                     sala: "Sala 4",
-                    preco: "55 intera / 25 meia",
+                    preco: 50,
+                    assentosOcupado: []
+                }
+            ]
+        },
+        {
+             id: "Filme 3",
+            titulo: "Homem Aranha - De Volta ao lar",
+            poster: "https://www.papodecinema.com.br/wp-content/uploads/2017/05/20170703-homem-aranha-de-volta-ao-lar-papo-de-cinema-cartaz.webp",
+            descricao: "Um garoto que foi picado por uma aranha radioativa ganhou seus poderes e agora luta para proteger a terra junto aos vingadores",
+            duracao: "2h 25min",
+            sessao: [
+                {
+                    id: "Sessao1_Filme3",
+                    horario: "15:00",
+                    sala: "Sala 3",
+                    preco: 20,
+                    assentosOcupado: ["C2","C3","A1"]
+                },
+
+                {
+                    id: "Sessao2_Filme3",
+                    horario: "19:30",
+                    sala: "Sala 4",
+                    preco: 20.50,
                     assentosOcupado: []
                 }
             ]

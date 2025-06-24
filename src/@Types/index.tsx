@@ -7,7 +7,7 @@ export interface Sessao {
     id: string;
     horario: string;
     sala: string;
-    preco: string;
+    preco: number;
     assentosOcupado: string[]; //um array de strings de assentos ocupados
 }
 

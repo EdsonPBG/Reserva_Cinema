@@ -72,7 +72,7 @@ const FilmeDetalhes = () => {
             filmeExibido.sessao.map((sessao: Sessao) => (
                 <div key={sessao.id} className={styles.sessaoCard}>
                     <p>Horário: {sessao.horario}</p>
-                    <p>Preço: R$ {sessao.preco} </p>
+                    <p>Preço: R$ {sessao.preco.toFixed(2).replace(".",",")} </p>
                     <button  className={styles.selecionarAssentosButton}
                         onClick={() => {
                             if (selecionarSessao) {

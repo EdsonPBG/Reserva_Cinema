@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/home";
 import { ReservaProvider } from "./Context/ReservaContext";
 import FilmeDetalhes from "./Pages/filmeDetalhes"
+import SelecaoAssentos from "./Pages/selecaoAssentos";
+import ResumoReserva from "./Pages/resumoReserva";
 import styles from "./styles.module.css";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />}/>
                   <Route path="/filme/:id" element={<FilmeDetalhes />}/>
+                  <Route path="/selecao-assentos" element={<SelecaoAssentos />} />
+                  <Route path="/resumo-reserva" element={<ResumoReserva />} />
                   {/* Adicionar novas rotas aqui conforme for fazendo */}
                 </Routes>
             </div>
