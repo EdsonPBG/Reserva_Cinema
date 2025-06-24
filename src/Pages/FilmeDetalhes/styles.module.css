@@ -1,7 +1,6 @@
-/* --- Estilos da Página FilmeDetalhes.tsx --- */
 .filmeDetalhesContainer {
   padding: 40px;
-  background-color: #2c2c2c; /* Fundo escuro */
+  background-color: #2c2c2c; 
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   max-width: 1000px;
@@ -16,7 +15,7 @@
 }
 
 .backButton {
-  background-color: #4a4a4a; /* Cinza escuro */
+  background-color: #4a4a4a; 
   color: white;
   padding: 12px 20px;
   border-radius: 5px;
@@ -24,7 +23,7 @@
   top: 25px;
   left: 25px;
   box-shadow: none;
-  text-transform: none; /* Não em maiúsculas */
+  text-transform: none; 
   font-weight: normal;
 }
 
@@ -35,8 +34,8 @@
 
 .filmeInfo {
   display: flex;
-  flex-direction: row; /* Layout em linha para desktop */
-  align-items: flex-start; /* Alinha no topo */
+  flex-direction: row; 
+  align-items: flex-start; 
   gap: 40px;
   margin-top: 50px;
   text-align: left;
@@ -61,7 +60,7 @@
 }
 
 .filmeTextoDetalhes p strong {
-  color: #f5f5f5; /* Texto forte mais claro */
+  color: #f5f5f5; 
 }
 
 .sessoesTitulo {
@@ -81,7 +80,7 @@
 }
 
 .sessaoCard {
-  background-color: #333; /* Fundo ligeiramente mais claro */
+  background-color: #333; 
   border: 1px solid #444;
   border-radius: 10px;
   padding: 20px;
@@ -102,7 +101,7 @@
 }
 
 .selecionarAssentosButton {
-  background-color: #e50914; /* Vermelho vibrante */
+  background-color: #e50914; 
   color: white;
   margin-top: 20px;
   align-self: center;

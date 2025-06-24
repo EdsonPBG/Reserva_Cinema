@@ -1,14 +1,12 @@
-// src/Services/localStorage.ts
 import DBZ from "../assets/img/Dragon_BallZ.webp"
 import BL from "../assets/img/Blue-Lock-O-Filme.webp"
 import HA from "../assets/img/homem-aranha-de-volta-ao-lar.webp"
 import NC from "../assets/img/uma-noite-de-crimes.webp"
 import type { CinemaData, Filme, Sessao, Assentos } from "../@Types";
 
-// Dados iniciais com IDs ajustados para melhor compatibilidade em URLs
 const initialCineData: CinemaData = {
     filmes: [{
-        id: "filme1", // IDs ajustados (minúsculas, sem espaços)
+        id: "filme1", 
         titulo: "Dragão Ball Z: A batalha do Deuses",
         poster: `${DBZ}`,
         descricao: "Prepare-se para o retorno triunfal de Dragon Ball Z aos cinemas, numa aventura que redefine os limites do poder e do universo! \n Após décadas de sono, Bills (Beerus), o temível Deus da Destruição, desperta. Com um poder inimaginável, ele fica intrigado com a notícia de que Freeza foi derrotado por um mortal, o Saiyajin Goku.",
@@ -19,7 +17,7 @@ const initialCineData: CinemaData = {
         ]
     },
     {
-        id: "filme2", // IDs ajustados
+        id: "filme2", 
         titulo: "Blue Lock: Episodio nagi",
         poster: `${BL}`,
         descricao: "Acompanhe a história do gênio do futebol, Seishiro Nagi. Cansado da rotina e buscando algo que o desafie, Nagi é arrastado para o programa Blue Lock, um centro de treinamento intensivo para criar o melhor atacante do mundo. Ao lado de seu parceiro Reo Mikage, Nagi descobre um novo propósito no futebol, enfrentando adversários e seus próprios limites em sua busca para dominar o campo e provar que é o verdadeiro egoísta em campo.",
@@ -30,7 +28,7 @@ const initialCineData: CinemaData = {
         ]
     },
     {
-        id: "filme3", // IDs ajustados
+        id: "filme3",
         titulo: "Homem Aranha - De Volta ao lar",
         poster: `${HA}`,
         descricao: "Após sua incrível experiência com os Vingadores, o jovem Peter Parker retorna à sua vida normal, sob a vigilância de Tony Stark. Ansioso para provar seu valor como herói, Peter enfrenta o temível Abutre, que ameaça o que ele mais preza. Ele precisa aprender a equilibrar sua vida escolar com as responsabilidades de ser o Homem-Aranha, enquanto descobre o verdadeiro significado de ser um super-herói.",
@@ -41,7 +39,7 @@ const initialCineData: CinemaData = {
         ]
     },
     {
-        id: "filme4", // IDs ajustados
+        id: "filme4", 
         titulo: "Uma Noite de Crimes (The Purge)",
         poster: `${NC}`,
         descricao: "Num futuro próximo, o governo americano instituiu A Noite do Expurgo: doze horas anuais onde todos os crimes, incluindo assassinato, são legais. A família Sandin, rica e segura em sua casa, acredita estar a salvo. Contudo, quando um estranho busca refúgio, eles são forçados a confrontar a brutalidade do evento. A noite se transforma em um pesadelo de sobrevivência.",
