@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom"; //Hook para ler os parametros da URL
 import { useReserva } from "../../Context/ReservaContext"; //Para acessar o filmeSelecionado que foi salvo
 import type { CinemaData, Filme, Sessao } from "../../@Types";
-import { initialData } from "../../Services/localStorage";
+import { initialData } from "../../Services";
 import styles from "./styles.module.css"
 
 

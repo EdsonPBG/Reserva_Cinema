@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useReserva } from "../../Context/ReservaContext";
-import { initialData } from "../../Services/localStorage"; // Importe a função que carrega os dados do LocalStorage
+import { initialData } from "../../Services"; // Importe a função que carrega os dados do LocalStorage
 import type { Assentos, Sessao, CinemaData } from "../../@Types"; // Importe todos os tipos necessários
 import styles from "./styles.module.css";
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { initialData } from "../../Services/localStorage";
+import { initialData } from "../../Services";
 import type { Filme, CinemaData } from "../../@Types";
 import FilmeCard from "../../Componentes/FilmeCard"
 import styles from "./styles.module.css"

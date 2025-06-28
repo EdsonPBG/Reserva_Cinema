@@ -1,7 +1,8 @@
-import React from "react";
+// import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useReserva } from "../../Context/ReservaContext";
-import { initialData, saveData } from "../../Services/localStorage";
+import { initialData } from "../../Services";
+import { saveData } from "../../Services/localStorage";
 import type { CinemaData, Filme, Sessao } from "../../@Types";
 import styles from "./styles.module.css";
 
