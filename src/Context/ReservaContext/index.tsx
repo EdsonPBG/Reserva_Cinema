@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, Children } from "react";
+import React, { createContext, useState, useContext } from "react";
 import type { Filme, Sessao, ReservaState, ReservaContextType } from "../../@Types";
 import type { ReactNode } from "react";
 
@@ -8,7 +8,7 @@ const initialReservaState: ReservaState = { //Define o estado inicial da reserva
     assentoSelecionado: [],
 };
 
-export const ReservaContext = createContext<ReservaContextType>({ //Cria o context da reserva como se fosse um "canal de comunicação" ou um "armario comppartilhado"
+export const ReservaContext = createContext<ReservaContextType>({ //Cria o context da reserva como se fosse um "canal de comunicação" ou um "armario compartilhado"
     reserva: initialReservaState,
     selecionarFilme: () => {},
     selecionarSessao: () => {},

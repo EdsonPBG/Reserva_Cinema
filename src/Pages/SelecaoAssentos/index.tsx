@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useReserva } from "../../Context/ReservaContext";
 import { initialData } from "../../Services/localStorage"; // Importe a função que carrega os dados do LocalStorage
-import type { Assentos, Sessao, Filme, CinemaData } from "../../@Types"; // Importe todos os tipos necessários
+import type { Assentos, Sessao, CinemaData } from "../../@Types"; // Importe todos os tipos necessários
 import styles from "./styles.module.css";
 
-const SelecaoAssentos = () => {
+const SelecaoAssentos = () => { //Função para selecionar os assentos dos filmes e fazer com que os assentos sinalizem caso esteja livre, ocupado ou selecionado
     const navigate = useNavigate();
     const { reserva, alterarAssento } = useReserva();
     const { filmeSelecionado, sessaoSelecionada, assentoSelecionado } = reserva;

@@ -6,13 +6,13 @@
 .homeContainer h2 {
   font-size: 2.5em;
   margin-bottom: 40px;
-  border-bottom: 2px solid #444; /* Linha divisória discreta */
+  border-bottom: 2px solid #444; /* Linha divisória  */
   padding-bottom: 15px;
 }
 
 .filmesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Deixa os cards numa coluna bonitinho */ 
   gap: 40px; /* Espaçamento maior entre os cards */
   justify-content: center; /* Centraliza os cards no grid */
   padding: 20px 0;

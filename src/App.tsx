@@ -18,7 +18,6 @@ function App() {
                   <Route path="/filme/:id" element={<FilmeDetalhes />}/>
                   <Route path="/selecao-assentos" element={<SelecaoAssentos />} />
                   <Route path="/resumo-reserva" element={<ResumoReserva />} />
-                  {/* Adicionar novas rotas aqui conforme for fazendo */}
                 </Routes>
             </div>
       </ReservaProvider>

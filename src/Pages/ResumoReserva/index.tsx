@@ -5,7 +5,7 @@ import { initialData, saveData } from "../../Services/localStorage";
 import type { CinemaData, Filme, Sessao } from "../../@Types";
 import styles from "./styles.module.css";
 
-const ResumoReserva = () => {
+const ResumoReserva = () => { //Função para mostrar o resumo da reserva feita pelo usuario, cancelamento de reserva, armazenamento da reserva no localstorage e etc
     const navigate = useNavigate();
     const { reserva, limparReserva } = useReserva();
     const { filmeSelecionado, sessaoSelecionada, assentoSelecionado } = reserva;

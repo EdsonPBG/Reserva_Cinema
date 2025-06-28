@@ -1,11 +1,10 @@
-/* --- Estilos Globais --- */
 * {
   box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura/altura */
 }
 
-/* Estilos para o corpo da página */
+/* Estilos para o corpo das paginas */
 body {
-  font-family: 'Inter', sans-serif; /* Aplica a fonte 'Inter' */
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1a1a1a; /* Fundo bem escuro, quase preto */
@@ -15,13 +14,13 @@ body {
 
 /* Estilos para títulos de todos os níveis */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+  margin-top: 5vh;
   margin-bottom: 15px;
   color: #e50914; /* Vermelho vibrante, similar ao destaque do Ingresso.com */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra leve no texto */
 }
 
-/* Estilos para links (geralmente usados pelo Link do React Router) */
+/* Estilos para links */
 a {
   text-decoration: none; /* Remove sublinhado padrão */
   color: inherit; /* Links herdam a cor do texto do elemento pai */
@@ -57,7 +56,6 @@ button:disabled {
   transform: none; /* Remove efeito de hover */
 }
 
-/* --- Estilos do Componente App.tsx (Contêiner Principal) --- */
 .app {
   text-align: center; /* Centraliza o texto */
   padding: 20px;
@@ -71,7 +69,7 @@ button:disabled {
   flex-direction: column; /* Coloca os itens em coluna */
 }
 
-/* Título principal do aplicativo */
+/* Título principal */
 .app h1 {
   font-size: 3em;
   margin-bottom: 40px;

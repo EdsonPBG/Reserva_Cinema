@@ -2,9 +2,9 @@ import DBZ from "../assets/img/Dragon_BallZ.webp"
 import BL from "../assets/img/Blue-Lock-O-Filme.webp"
 import HA from "../assets/img/homem-aranha-de-volta-ao-lar.webp"
 import NC from "../assets/img/uma-noite-de-crimes.webp"
-import type { CinemaData, Filme, Sessao, Assentos } from "../@Types";
+import type { CinemaData, Filme, Sessao } from "../@Types";
 
-const initialCineData: CinemaData = {
+const initialCineData: CinemaData = { //Função para armazenar os filmes que irão esta na home a mostra 
     filmes: [{
         id: "filme1", 
         titulo: "Dragão Ball Z: A batalha do Deuses",
@@ -54,7 +54,7 @@ const initialCineData: CinemaData = {
 
 const localStorageKey = "CinemaData";
 
-export const saveData = (data: CinemaData): void => {
+export const saveData = (data: CinemaData): void => { //Função para salvar todos os dados do cinema
     try {
         localStorage.setItem(localStorageKey, JSON.stringify(data));
         console.log("Dados salvos com sucesso!")
@@ -63,13 +63,12 @@ export const saveData = (data: CinemaData): void => {
     }
 };
 
-export const loadData = (): CinemaData | null => {
+export const loadData = (): CinemaData | null => { //Função para carregar os dados salvos no localstorage 
     try {
         const dataString = localStorage.getItem(localStorageKey);
         if (dataString) {
             const parsedData = JSON.parse(dataString);
 
-            // Garante que 'preco' seja um Number e que 'sessao' esteja no formato correto
             const processedData: CinemaData = {
                 ...parsedData,
                 filmes: parsedData.filmes.map((filme: Filme) => ({
@@ -89,7 +88,7 @@ export const loadData = (): CinemaData | null => {
     }
 };
 
-export const initialData = (): CinemaData => {
+export const initialData = (): CinemaData => { //Função para carregar os dados iniciais do cinema 
     let currentData: CinemaData | null = loadData();
 
     if (!currentData) {

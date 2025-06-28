@@ -6,15 +6,15 @@ import { initialData } from "../../Services/localStorage";
 import styles from "./styles.module.css"
 
 
-const FilmeDetalhes = () => {
+const FilmeDetalhes = () => { //Aqui cria uma função para os detalhes dos filmes 
     const { id } = useParams<{ id: string }>(); //Permite acessar a URL da rota, puxado pelo id
     const navigate = useNavigate(); //Para direcionar o usuario programaticamente
     const { reserva, selecionarSessao, selecionarFilme }  = useReserva(); 
-    const filmeSelecionadoContext = reserva?.filmeSelecionado;  //Extrai o filmeSelecionadoContext do estdao da reserva
+    const filmeSelecionadoContext = reserva?.filmeSelecionado;  //Extrai o filmeSelecionadoContext do estado da reserva
     const [filmeExibido, setFilmeExibido] = useState<Filme | null>(null);
 
 
-    useEffect(() => { 
+    useEffect(() => { //Ele garante que as paginas de detalhs sempre mostre o filme correto, independente de por onde foi acessado
         if (filmeSelecionadoContext && filmeSelecionadoContext.id === id) { //Se ja tem um filme selecionado no contexto e o ID do filme no contexto
             setFilmeExibido(filmeSelecionadoContext);
         } else if (id) { //Se não, tenta carregar o filme do localStorage, caso pegue a URl diretamente
@@ -44,11 +44,10 @@ const FilmeDetalhes = () => {
 
    return (
     
-    <div className={styles.filmeDetalhesContainer}>
+    <div className={styles.filmeDetalhesContainer}> {/* Aqui fica o container dos detalhes do filme, link para o ingresso e etc */}
         <button className={styles.backButton} onClick={() => navigate("/")}>
             &larr; Voltar para a lista de Filmes
         </button>
-
         
 
         <h2>{filmeExibido.titulo}</h2>
