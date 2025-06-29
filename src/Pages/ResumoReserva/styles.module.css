@@ -73,3 +73,11 @@
 .cancelarReservaButton:hover {
   background-color: #5a5a5a;
 }
+
+@media (max-width: 768px) {
+  .confirmarReservaButton,
+  .cancelarReservaButton {
+    margin-top: 3vh;
+    margin-left: 1vh;
+  }
+}

@@ -110,3 +110,62 @@
 .selecionarAssentosButton:hover:not(:disabled) {
   background-color: #c00c11;
 }
+@media (max-width: 768px) {
+  .filmeDetalhesContainer {
+    padding: 25px;
+    margin: 25px auto;
+  }
+
+  .filmeDetalhesContainer h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+  }
+
+  .backButton {
+    top: 15px;
+    left: 15px;
+    padding: 8px 12px;
+    font-size: 0.9em;
+  }
+
+  .filmeInfo {
+    flex-direction: column; /* Imagem e texto ficam em coluna */
+    align-items: center; /* Centraliza itens na coluna */
+    text-align: center; /* Centraliza o texto dentro da coluna */
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .filmePosterDetalhes {
+    max-width: 280px;
+  }
+
+  .filmeTextoDetalhes p {
+    font-size: 1.05em;
+  }
+
+  .sessoesTitulo {
+    font-size: 1.8em;
+    margin-top: 40px;
+    padding-bottom: 10px;
+  }
+
+  .sessoesList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sessaoCard {
+    min-width: unset;
+    width: 90%;
+  }
+
+  .selecaoAssentosContainer {
+    padding: 25px;
+    margin: 25px auto;
+  }
+
+  .selecaoAssentosContainer h2 {
+    font-size: 2em;
+  }
+}
